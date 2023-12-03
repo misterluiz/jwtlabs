@@ -8,7 +8,7 @@ $ cd jwtlabs
 $ docker build -t jwtlabs .
 $ docker run -p 8080:80 jwtlabs
 ```
-Acesse: http://localhost:8000
+Acesse: http://localhost:8080
 
 
 
