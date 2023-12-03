@@ -7,7 +7,7 @@ RUN apt-get update && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Copie os arquivos necessários para o diretório padrão do Apache
-COPY index.php /var/www/html/
+COPY . /var/www/html/
 COPY composer.json /var/www/html/
 
 # Mude o diretório de trabalho para /var/www/html
@@ -18,3 +18,4 @@ RUN composer install --no-dev
 
 # Expõe a porta 80 para fora do contêiner
 EXPOSE 80
+

