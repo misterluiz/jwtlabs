@@ -19,7 +19,7 @@ $alg = $decoded['alg'];
         if ($role == "admin"){
             echo "JWT{YOU_ARE_ADMIN_NONE_ATTACK}";
         }else{
-            echo"Voce não é admin";
+            echo"Voce não é admin!";
         }
         
     }else
