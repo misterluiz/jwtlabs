@@ -11,7 +11,7 @@ $key = 'secret';
     $validaToken = $token;
   
     
-    //$newtoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjMsInVzZXJuYW1lIjoiR2FicmllbCIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY5OTU4ODUxM30.6ZoxHgKr70jnVcPJ3F8Yn87iNLkerTuYEX4sDkJaRMw";
+ 
     try{
     $decoded = JWT::decode($validaToken, new Key($key, 'HS256'));
 
