@@ -8,7 +8,6 @@ RUN apt-get update && \
 
 # Copie os arquivos necessários para o diretório padrão do Apache
 COPY . /var/www/html/
-COPY composer.json /var/www/html/
 
 # Mude o diretório de trabalho para /var/www/html
 WORKDIR /var/www/html/
